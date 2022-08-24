@@ -1,0 +1,299 @@
+@charset "UTF-8";
+/* CSS Document */
+.main-visual__container {
+  position: relative;
+  background-image: url("../images/top_page/top_image_burger02.png");
+  background-position: left center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc(100vh - 100px);
+}
+.main-visual__tittle {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  width: 50%;
+  min-width: 275px;
+  transform: translate(0, -50%);
+}
+@media screen and (max-width: 768px) {
+  .main-visual__container {
+    height: calc(100vh - 50px);
+  }
+}
+.section-concept {
+  position: relative;
+  padding: 80px 5% 120px;
+  overflow: hidden;
+}
+.section-concept h2 {
+  margin-bottom: 30px;
+}
+.section-concept p {
+  margin: 0 auto 40px;
+  line-height: 1.5;
+}
+.section-concept img {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 25%;
+  transform: rotate(30deg);
+  z-index: -1;
+  opacity: 0.3;
+}
+@media screen and (max-width: 480px) {
+  .section-concept {
+    padding: 40px 5% 60px;
+  }
+  .section-concept h2 {
+    margin-bottom: 20px;
+  }
+}
+.section-menu {
+  background-image: url("../images/top_page/spiration dark.png");
+  padding: 50px 0 40px;
+}
+.section-menu h2 {
+  margin-bottom: 50px;
+}
+.section-menu ul {
+  max-width: 1040px;
+  margin: 0 auto;
+  list-style: none;
+}
+.section-menu ul li {
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  margin: 0 20px 40px 20px;
+  text-align: left;
+  font-family: "Arial Black", Gadget, "sans-serif";
+}
+.section-menu ul li a {
+  text-decoration: none;
+}
+.section-menu ul li a:hover {
+  opacity: 1;
+}
+.section-menu__item-picture {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+.section-menu__item-title {
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  background-color: rgba(36, 32, 30, .8);
+  transition-duration: 1s;
+  transition-property: height;
+}
+.section-menu__item-title:hover {
+  height: 100%;
+}
+.section-news {
+  padding: 80px 5% 120px;
+}
+.section-news h2 {
+  margin-bottom: 40px;
+}
+.section-news__box {
+  padding-top: 5%;
+  margin-bottom: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding-bottom: 2%;
+  background-color: #FFFFFF;
+}
+.section-news__box-l2box {
+  float: left;
+  width: 45%;
+  display: block;
+  margin-right: 1%;
+  margin-left: 4%;
+  text-align: left;
+}
+.section-news__box-r2box {
+  float: right;
+  width: 45%;
+  display: block;
+  margin-right: 4%;
+  margin-left: 1%;
+  text-align: left;
+}
+.sectiom-news__new-box li {
+  margin-bottom: 5%;
+  padding-bottom: 5%;
+  border-bottom: #dddddd 1px dotted;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.sectiom-news__new-box li time {
+  width: 100%;
+  padding-bottom: 2%;
+  font-weight: bold;
+  float: left;
+  color: #F5831E;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  text-align: left;
+}
+.sectiom-news__new-box li h3 {
+  float: left;
+  text-align: left;
+  color: #000000;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+@media screen and (max-width: 1024px) {
+  .section-news__box-l2box {
+    width: 100%;
+    margin: 0 5%;
+  }
+  .section-news__box-r2box {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-news {
+    padding: 40px 5% 60px;
+  }
+}
+.section-location {
+  background-image: url("../images/top_page/spiration dark.png");
+  padding: 50px 5% 80px;
+}
+.section-location h2 {
+  margin-bottom: 40px;
+}
+.section-location__box {
+  display: flex;
+  flex-flow: row-reverse;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+.section-location__box-left {
+  width: 100%;
+  text-align: left;
+}
+.section-location__box-title {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+.section-location__box-title img {
+  width: 200px;
+}
+.section-location__box-title p {
+  margin-left: 20px;
+  font-size: 3.0rem;
+  font-weight: 600;
+  ;
+}
+.section-location__box-table-title {
+  height: 100px;
+  margin: 0;
+  padding-right: 20px;
+  vertical-align: top;
+  font-family: "Arial Black", Gadget, "sans-serif";
+  border-right: 1px solid #FFFFFF
+}
+.section-location__box-table-title-last {
+  height: 50px;
+}
+.section-location__box-table-txt {
+  vertical-align: top;
+  padding-left: 20px;
+}
+.section-location__box-right {
+  width: 100%;
+}
+.section-location__box-map {
+  height: 100%;
+}
+.section-location__box-map iframe {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 800px) {
+  .section-location__box {
+    display: block;
+  }
+  .section-location__box-left {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .section-location__box-title {
+    margin-bottom: 30px;
+  }
+  .section-location__box-table-title {
+    height: 75px;
+    margin: 0;
+    padding-right: 20px;
+  }
+  .section-location__box-table-title-last {
+    height: 50px;
+  }
+  .section-location__box-right {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-location__box-title img {
+    width: 150px;
+  }
+  .section-location__box-title p {
+    margin-left: 20px;
+    font-size: 2.0rem;
+    font-weight: 600;
+    ;
+  }
+  .section-location__box-table-txt {
+    font-size: 1.2rem;
+  }
+}
+.section-delivery {
+  padding: 40px 5% 140px;
+}
+.section-delivery h2 {
+  margin-bottom: 40px;
+}
+.section-delivery__uber {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.section-delivery__uber img {
+  width: 100%;
+}
+.section-delivery__uber img:hover {
+  opacity: 0.5;
+}
+@media screen and (max-width: 768px) {
+  .section-delivery__uber {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-delivery {
+    padding: 40px 5% 70px;
+  }
+}
+@media screen and (max-width: 480px) {
+  section h2 {
+    font-size: 2.0rem;
+  }
+}

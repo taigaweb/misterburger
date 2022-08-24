@@ -1,0 +1,191 @@
+@charset "UTF-8";
+/* CSS Document */
+/* section-top */
+.section-top__image {
+  position: relative;
+  height: 500px;
+  background-image: url("../images/concept/concept_image.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-top__image h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Anton', sans-serif;
+  font-size: 4.0rem;
+  letter-spacing: 1.0rem;
+}
+.section-top__lead {
+  padding: 80px 10% 100px;
+}
+.section-top__lead h2 {
+  margin-bottom: 30px;
+}
+.section-top__lead p {
+  margin: 0 auto;
+  line-height: 1.6;
+}
+@media screen and (max-width: 768px) {
+  .section-top__image {
+    height: 200px;
+  }
+  .section-top__lead {
+    padding: 60px 10% 60px;
+  }
+  .section-top__image h1 {
+    font-size: 3.0rem;
+  }
+  .section-top__lead h2 {
+    font-size: 3.0rem;
+  }
+  .section-top__lead p {
+    font-size: 1.4rem;
+  }
+}
+/* section-meat,section-vegetable,section-buns */
+.section-meat, .section-vegetable, .section-buns {
+  display: flex;
+  max-width: 1240px;
+  margin: 0 auto 30px;
+}
+.section-vegetable {
+  flex-flow: row-reverse;
+}
+.section-meat__visual, .section-vegetable__visual, .section-buns__visual {
+  width: 45%;
+}
+.section-meat__visual img, .section-vegetable__visual img, .section-buns__visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section-meat__description, .section-vegetable__description, .section-buns__description {
+  width: 55%;
+  padding: 5%;
+  text-align: left;
+}
+.section-vegetable__description {
+  text-align: right;
+}
+.section-meat__description h2, .section-vegetable__description h2, .section-buns__description h2 {
+  font-family: YuGothic, "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+  font-size: 3vw;
+  letter-spacing: normal;
+  margin-bottom: 10%;
+}
+.section-meat__description p, .section-vegetable__description p, .section-buns__description p {
+  font-size: 1.5vw;
+  line-height: 2.0;
+  margin-bottom: 5%;
+}
+.section-meat__description span, .section-vegetable__description span, .section-buns__description span {
+  font-family: Arial, Helvetica, "sans-serif";
+  font-size: 1.2rem;
+  line-height: 3.0rem;
+  letter-spacing: 0.3rem;
+  color: #7C7977;
+}
+@media screen and (max-width: 768px) {
+  .section-meat, .section-vegetable, .section-buns {
+    display: block;
+  }
+  .section-meat__visual, .section-vegetable__visual, .section-buns__visual {
+    width: 100%;
+    text-align: center;
+  }
+  .section-meat__visual img, .section-vegetable__visual img, .section-buns__visual img {
+    box-sizing: border-box;
+    padding: 5%;
+  }
+  .section-meat__description, .section-vegetable__description, .section-buns__description {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .section-meat__description h2, .section-vegetable__description h2, .section-buns__description h2 {
+    font-size: 5vw;
+    margin-bottom: 5%;
+  }
+  .section-meat__description p, .section-vegetable__description p, .section-buns__description p {
+    font-size: 3vw;
+    margin-bottom: 3%;
+  }
+}
+/* section-gallery */
+.section-gallery {
+  padding: 50px 10% 100px;
+}
+.section-gallery h2 {
+  margin-bottom: 30px;
+}
+.section-gallery p {
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+@media screen and (max-width: 768px) {
+  .section-gallery h2 {
+    font-size: 3.0rem
+  }
+  .section-gallery p {
+    font-size: 1.4rem;
+  }
+}
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider { /*横幅94%で左右に余白を持たせて中央寄せ*/
+  width: 94%;
+  margin: 0 auto;
+}
+.slider img {
+  width: 100%; /*スライダー内の画像を横幅100%に*/
+  height: auto;
+}
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+.slider .slick-slide {
+  margin: 0 10px;
+}
+/*矢印の設定*/
+/*戻る、次へ矢印の位置*/
+.slick-prev, .slick-next {
+  position: absolute; /*絶対配置にする*/
+  top: 42%;
+  cursor: pointer; /*マウスカーソルを指マークに*/
+  outline: none; /*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #666; /*矢印の色*/
+  border-right: 2px solid #666; /*矢印の色*/
+  height: 15px;
+  width: 15px;
+}
+.slick-prev { /*戻る矢印の位置と形状*/
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+.slick-next { /*次へ矢印の位置と形状*/
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+/*ドットナビゲーションの設定*/
+.slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width: 8px; /*ドットボタンのサイズ*/
+  height: 8px; /*ドットボタンのサイズ*/
+  display: block;
+  border-radius: 50%;
+  background: #ccc; /*ドットボタンの色*/
+  padding: 0;
+}
+.slick-dots .slick-active button {
+  background: #333; /*ドットボタンの現在地表示の色*/
+}

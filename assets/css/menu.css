@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/* CSS Document */
+/* section-top */
+.section-top__image {
+  position: relative;
+  height: 500px;
+  background-image: url("../images/menu/menu_image.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-top__image h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Anton', sans-serif;
+  font-size: 4.0rem;
+  letter-spacing: 1.0rem;
+}
+.section-top__lead {
+  padding: 80px 10% 100px;
+}
+@media screen and (max-width: 768px) {
+  .section-top__image {
+    height: 200px;
+  }
+  .section-top__image h1 {
+    font-size: 3.0rem;
+  }
+  .section-top__lead {
+  padding: 60px 10% 60px;
+}
+  .section-top__lead h2 {
+    font-size: 3.0rem;
+  }
+}
+/* section-menu */
+.section-menu {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 5% 80px;
+}
+.section-menu__category-title {
+  border-top: solid 3px #333;
+  border-bottom: solid 3px #333;
+  padding: 20px 0;
+  margin-bottom: 15px;
+}
+.section-menu__category-title h3 {
+  font-size: 3.0rem;
+}
+.section-menu__category-title span {
+  font-size: 1.3rem;
+  display: block;
+  margin-top: 6px;
+  font-weight: bold;
+}
+.section-menu__category-title span::before, .section-menu__category-title span::after {
+  content: '';
+  width: 30px;
+  border-top: 1px solid #888;
+  display: inline-block;
+  padding-bottom: 4px;
+  margin: 0 3px;
+}
+.section-menu__hamburger-menu {
+  display: flex;
+}
+.menu-list-l {
+  width: 50%;
+  text-align: left;
+  padding-right: 20px;
+}
+.menu-list-r {
+  width: 50%;
+  text-align: left;
+  padding-left: 20px;
+}
+.menu-item {
+  position: relative;
+  margin-bottom: 12px;
+}
+.menu-item::before {
+  border-bottom: 1px dotted #ddd;
+  content: "";
+  height: 1px;
+  position: absolute;
+  width: 100%;
+  top: 7px;
+  z-index: 1;
+}
+.menu-item h4 {
+  display: inline;
+  position: relative;
+  background: #000;
+  font-size: 1.8rem;
+  z-index: 2;
+}
+.menu-item h4 span.wabun {
+  display: block;
+  color: #a3a3a3;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 2px;
+}
+p.price {
+  position: absolute;
+  font-size: 1.7rem;
+  background: #000;
+  top: -2px;
+  right: 0;
+  z-index: 3;
+  padding-left: 8px;
+}
+.yen {
+  font-size: .8em;
+  padding-right: 2px;
+}
+.menu-img1 {
+  max-width: 500px;
+  height: 320px;
+  margin: 0 auto;
+  background-image: url("../images/menu/hamburger_1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.menu-img2 {
+  max-width: 500px;
+  height: 320px;
+  margin: 0 auto;
+  background-image: url("../images/menu/hamburger_2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section-menu__hamburger-menu .menu-list-r li:last-child {
+  margin-top: 56px;
+}
+.section-menu__hamburger-plus-menu {
+  display: flex;
+}
+.plus-menu-list-l {
+  width: 50%;
+  text-align: left;
+  padding-right: 20px;
+}
+.plus-menu-list-r {
+  width: 50%;
+  text-align: left;
+  padding-left: 20px;
+}
+.plus-menu-list-l h3, .plus-menu-list-r h3 {
+  font-size: 3.0rem;
+  text-transform: uppercase;
+  border-bottom: solid 1px #888;
+  padding-bottom: 15px;
+  margin: 20px 0 15px;
+}
+.plus-menu-list-l.topping {
+  padding-top: 20px;
+}
+.plus-menu-list-r.dip h3 {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin: 20px 0 0px;
+}
+.plus-menu-list-r .dip-info {
+  font-size: 1.2rem;
+  ;
+  border-bottom: solid 1px #888;
+  padding-bottom: 15px;
+  margin: 2px 0 15px;
+}
+.section-menu__side-order-menu {
+  display: flex;
+}
+.section-menu__drinks-memu {
+  display: flex;
+}
+.menu-img4 {
+  max-width: 500px;
+  height: 320px;
+  margin: 0 auto;
+  background-image: url("../images/menu/hamburger_4.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .section-menu__category-title h3 {
+  font-size: 2.0rem;
+  }
+  .section-menu__hamburger-menu, .section-menu__hamburger-plus-menu, .section-menu__side-order-menu, .section-menu__drinks-memu {
+    display: block;
+  }
+  .menu-list-l {
+    width: 100%;
+    padding-right: 0px;
+    margin-top: 20px;
+  }
+  .menu-list-r {
+    width: 100%;
+    text-align: left;
+    padding-left: 0px;
+    margin-top: 20px;
+  }
+  .plus-menu-list-l {
+    width: 100%;
+    text-align: left;
+  }
+  .plus-menu-list-r {
+    width: 100%;
+    text-align: left;
+    padding-left: 0px;
+  }
+  .menu-item h4 {
+    font-size: 1.6rem;
+  }
+  .section-menu__hamburger-menu .menu-list-r li:last-child {
+  margin-top: 0;
+}
+}
